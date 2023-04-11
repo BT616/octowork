@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Events</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 100%;
+        }
+
+        h1 {
+            font-size: 1.75em;
+        }
+
+        h2 {
+            font-size: 1.5em;
+        }        
+
+        #banner {
+            background-color: #999;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        header {
+            margin-top: 50px;
+        }
+
+        main, body>section {
+            width: 800px;
+            margin: 50px auto;
+        }
+
+        main h2 {
+            cursor: pointer;
+        }
+
+        body>section{
+            margin-top: 50px;
+        }
+
+
+      /*  ****** font awesome icons for plus/minus ******* */
+
+       /* sets the 'plus' icon when the page loads */
+       main h2::before {
+            font-family: FontAwesome;
+            content:"\f067";
+            color: #999;
+            padding-right: 8px;
+        }
+
+      /* the class you are adding to the <h2>s = 'minus' */
+        .minus::before {
+            font-family: FontAwesome;
+            content:"\f068";
+            color: #999;
+            padding-right: 8px;
+        }        
+
+       /* sets the display for the <div>s when the page loads */
+        main div {
+            display: none;
+        }
+
+        /* the class you are adding to the <div>s = 'show' */
+         .show {
+             display: block;
+         }   
+
+    </style>
+    
+</head>
+
+<body>
+    <div id="banner" class="center">
+        <img src="images/img_question_answer.jpg" alt ="photo of question mark and answer mark">
+    </div>
+
+    <header class="center">
+        <h1>Questions and Answers</h1>
+    </header>
+
+    <main>
+        <section id="qa">
+            <h2>What is JavaScript?</h2>
+            <div>
+                JavaScript is a scripting language that runs in the web page.
+            </div>
+
+            <h2>What is the DOM?</h2>
+            <div>
+                The DOM is the structure of the elements on the web page.
+            </div>
+
+            <h2>What is the World Wide Web Consortium (W3C)?</h2>
+            <div>
+                W3C is the organization that sets web standards.
+            </div>
+        </section>
+    </main>        
+
+    <section>
+        <h2>Useful Resources</h2>
+        <p>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="new">MDN JavaScript Reference</a>
+        </p>
+
+        <p>
+            <a href="https://www.w3schools.com/js/js_htmldom.asp" target="new">Document Object Model</a>
+        </p>
+
+        <p>
+            <a href="https://www.w3.org/" target="new">World Wide Web Consortium</a>
+        </p>
+    </section>
+    
+</body>
+</html>
